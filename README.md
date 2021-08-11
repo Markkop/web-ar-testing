@@ -2,16 +2,15 @@
 
 Augmented Reality in the Web with AR.JS and A-Frame
 
-![Demo](https://cdn.glitch.com/98656598-55e8-4b15-821d-f5f2d20c4fa0%2FScreenrecorder-2021-08-11-18-00-18-1(2).gif?v=1628717817233)
+![Demo Gif](https://user-images.githubusercontent.com/16388408/129106986-992f4da5-2dd0-48da-b685-a4f22d090b6a.gif)
 
 ## Demo
 
-* Access [https://web-ar-mark.glitch.me](https://web-ar-mark.glitch.me)  
-* Scan the following QR Code:
-
-![QR Code](https://cdn.glitch.com/98656598-55e8-4b15-821d-f5f2d20c4fa0%2Fqr.jpeg?v=1628702746992)
-
+* Scan de QR Code below or access [https://web-ar-mark.glitch.me](https://web-ar-mark.glitch.me)  
+* Point your device to the same QR Code  
 * If on mobile, move and rotate the 3D model with touch gestures
+
+![QR Code](https://cdn.glitch.com/98656598-55e8-4b15-821d-f5f2d20c4fa0%2Fqr-code.png?v=1628718025946)
 
 ## Code
 
