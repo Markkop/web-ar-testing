@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale =1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, minimal-ui, viewport-fit "
+    />
+    <!---->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+  </head>
+
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="gesture-detector.js"></script>
+  <script src="gesture-handler.js"></script>
+
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene
+      vr-mode-ui="enabled: false;"
+      renderer="logarithmicDepthBuffer: true;"
+      embedded
+      arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
+      inspector=""
+      keyboard=""
+      shortcuts=""
+      screenshot=""
+      device-orientation-permission-ui=""
+      gesture-detector
+      id="scene"
+    >
+      <a-marker
+        id="animated-marker"
+        type="barcode"
+        value="6"
+        smooth="true"
+        smoothCount="5"
+        smoothTolerance="0.02"
+        smoothThreshold="2"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+      >
+        <a-entity
+          gltf-model="https://cdn.glitch.com/98656598-55e8-4b15-821d-f5f2d20c4fa0%2Fuploads_files_754856_DOMCEK.glb"
+          position="0 0 0"
+          scale="1 1 1"
+          class="clickable"
+          gesture-handler
+        >
+        </a-entity>
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
