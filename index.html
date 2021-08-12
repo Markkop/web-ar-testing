@@ -43,13 +43,40 @@
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
       >
-        <a-entity
-          gltf-model="https://cdn.glitch.com/98656598-55e8-4b15-821d-f5f2d20c4fa0%2Fuploads_files_754856_DOMCEK.glb"
-          position="0 0 0"
-          scale="1 1 1"
-          class="clickable"
-          gesture-handler
-        >
+        <a-entity rotation="0 0 0" position="0 0 0">
+          <a-plane
+            position="0 0 0"
+            rotation="-90 0 0"
+            width="4"
+            height="4"
+            material="opacity: 0.0; transparent: true"
+            gesture-handler
+          >
+            <a-entity
+              gltf-model="https://cdn.glitch.com/98656598-55e8-4b15-821d-f5f2d20c4fa0%2Fuploads_files_754856_DOMCEK.glb"
+              position="1 1 0.1"
+              rotation="90 0 0"
+              scale="0.3 0.3 0.3"
+              class="clickable"
+            >
+            </a-entity>
+            <a-entity
+              gltf-model="https://cdn.glitch.com/98656598-55e8-4b15-821d-f5f2d20c4fa0%2Fuploads_files_754856_DOMCEK.glb"
+              position="0 -1 0.1"
+              rotation="90 0 0"
+              scale="0.3 0.3 0.3"
+              class="clickable"
+            >
+            </a-entity>
+            <a-entity
+              gltf-model="https://cdn.glitch.com/98656598-55e8-4b15-821d-f5f2d20c4fa0%2Fuploads_files_754856_DOMCEK.glb"
+              position="-1 1 0.1"
+              rotation="90 0 0"
+              scale="0.3 0.3 0.3"
+              class="clickable"
+            >
+            </a-entity>
+          </a-plane>
         </a-entity>
       </a-marker>
 
